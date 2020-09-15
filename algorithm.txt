@@ -1,0 +1,17 @@
+Define main module:
+Variable iFile to open given txt document "JubledMsg.txt" as a read file.
+Variable oFile to open new txt document "MsgCGB.txt" as a write file.
+Create variable "msg" to read lines* from iFile as a string.
+
+Create for loop to remove unwanted numbers from msg.
+Create if statement inside of for loop to find if 0 and 1 are in msg.
+Create msg equal to the replacement of the unwanted numbers with "" (nothing-ness).
+
+Create oFile to write msg variable into the created file.
+Close oFile so no more writing can occur.
+
+run main.
+
+*TROUBLESHOOTING:
+When I ran, 0's and 1's were gone, but newlines (\n) were being printed out instead of executed into the text file.
+Had to change "readlines()" to "read()" in the variable msg so it would read the file correctly.
